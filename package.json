@@ -4,6 +4,10 @@
 	"description": "backend for part3 of fullstackopen course",
 	"main": "index.js",
 	"scripts": {
+		"build:ui": "rm -rf build && cd ../fullstack/part3/phonebook-frontend && npm run build --prod && cp -r build ../../../fullstackopen-part3-backend",
+		"deploy": "git push https://git.heroku.com/cryptic-spire-07703.git main",
+		"deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push && npm run deploy",
+		"logs:prod": "heroku logs --tail",
 		"start": "node index.js",
 		"dev": "nodemon index.js",
 		"test": "echo \"Error: no test specified\" && exit 1"
