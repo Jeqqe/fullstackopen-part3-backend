@@ -1,25 +1,30 @@
 {
-	"name": "fullstackopen-part3-backend",
-	"version": "1.0.0",
-	"description": "backend for part3 of fullstackopen course",
-	"main": "index.js",
-	"scripts": {
-		"build:ui": "rm -rf build && cd ../fullstack/part3/phonebook-frontend && npm run build --prod && cp -r build ../../../fullstackopen-part3-backend",
-		"deploy": "git push https://git.heroku.com/cryptic-spire-07703.git main",
-		"deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push && npm run deploy",
-		"logs:prod": "heroku logs --tail",
-		"start": "node index.js",
-		"dev": "nodemon index.js",
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"author": "Jeqqe",
-	"license": "MIT",
-	"dependencies": {
-		"cors": "^2.8.5",
-		"express": "^4.17.1",
-		"morgan": "^1.10.0"
-	},
-	"devDependencies": {
-		"nodemon": "^2.0.12"
-	}
+    "name": "fullstackopen-part3-backend",
+    "version": "1.0.0",
+    "description": "backend for part3 of fullstackopen course",
+    "main": "index.js",
+    "scripts": {
+        "build:ui": "rm -rf build && cd ../fullstack/part3/phonebook-frontend && npm run build --prod && cp -r build ../../../fullstackopen-part3-backend",
+        "deploy": "git push https://git.heroku.com/cryptic-spire-07703.git main",
+        "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push && npm run deploy",
+        "logs:prod": "heroku logs --tail",
+        "start": "node index.js",
+        "dev": "nodemon index.js",
+        "lint": "eslint .",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Jeqqe",
+    "license": "MIT",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^10.0.0",
+        "express": "^4.17.1",
+        "mongoose": "^5.13.5",
+        "mongoose-unique-validator": "^2.0.3",
+        "morgan": "^1.10.0"
+    },
+    "devDependencies": {
+        "eslint": "^7.32.0",
+        "nodemon": "^2.0.12"
+    }
 }

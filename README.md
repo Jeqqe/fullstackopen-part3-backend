@@ -1,5 +1,9 @@
-# fullstackopen-part3-backend
+# FullStackOpen - Part 3 | Phonebook backend
 
-Logic for the backend
+## Phonebook frontend
 
-heroku url: https://cryptic-spire-07703.herokuapp.com/api/persons
+Frontend repository for the application can be found [HERE](https://github.com/Jeqqe/fullstackopen-part3-backend)
+
+## Heroku
+
+Link to the heroku app can be found [HERE](https://cryptic-spire-07703.herokuapp.com/)
